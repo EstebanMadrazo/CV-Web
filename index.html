@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil Profesional</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @keyframes fade-in {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        .animate-fade-in {
+            animation: fade-in 1s ease-out forwards;
+        }
+
+        @keyframes slide-in {
+            from { transform: translateX(50px); opacity: 0; }
+            to { transform: translateX(0); opacity: 1; }
+        }
+        .animate-slide-in {
+            animation: slide-in 1s ease-out forwards;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-900 scroll-smooth">
+    <!-- Sección de Presentación -->
+    <header class="relative bg-blue-600 bg-center h-64 flex flex-col justify-center items-center text-white"
+        style="background-image: url('images/fondo.jpg'); background-size: cover; background-repeat: no-repeat;">
+        <!-- Capa azul tenue para el tinte -->
+        <div class="absolute inset-0 bg-blue-900/50 backdrop-blur-sm"></div>
+
+        <!-- Contenido del header -->
+        <div class="relative text-center">
+            <!-- Contenedor flexible para imagen y texto -->
+            <div class="flex items-center justify-center">
+                <!-- Imagen -->
+                <img src="images/perfil.png" alt="Logo" 
+                    class="w-40 h-40 object-cover rounded-lg shadow-lg mr-4">
+                
+                <!-- Texto -->
+                <div class="text-left">
+                    <h1 class="text-4xl font-extrabold tracking-wide">ESTEBAN ABRAHAM MADRAZO PARRA</h1>
+                    <p class="text-lg text-white/70">INGENIERIA DE SOFTWARE | ESTUDIANTE | DESARROLLADOR</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    
+    <!-- Sección de Educación -->
+    <section id="educacion" class="max-w-4xl mx-auto mt-10 p-6 bg-white shadow-lg rounded-lg opacity-0 animate-slide-in">
+        <h2 class="text-2xl font-semibold border-b pb-2">Educación</h2>
+        <p class="mt-4"><strong>Licenciatura en Informática</strong> - Universidad Autónoma De Yucatán (2017 - Actualidad)</p>
+        <p class="mt-2">Cursos Relevantes:</p>
+        <ul class="list-disc ml-6 mt-2">
+            <li>Aprende a programar con Python - Universidad Austral</li>
+            <li>Visualización de la Información con Tableau</li>
+        </ul>
+    </section>
+    
+    <!-- Sección de Experiencia -->
+    <section id="experiencia" class="max-w-4xl mx-auto mt-10 p-6 bg-white shadow-lg rounded-lg opacity-0 animate-slide-in">
+        <h2 class="text-2xl font-semibold border-b pb-2">Experiencia</h2>
+        <p class="mt-4"><strong>Proyecto En Greenfield Team (Trabajo actual): Aplicación de Citas Médicas</strong></p>
+        <li class="text-gray-700">Desarrollo de una aplicación móvil para gestionar citas médicas con Node.js y React Native.</li>
+        <li class="text-gray-700">Backend y Frontend.</li>
+        
+        <p class="mt-4"><strong>Practicas profesionales en Geolytics</strong></p>
+        <li class="text-gray-700">Corrección de errores de Backend y mayormente de Frontend de la aplicacion web</li>
+        <li class="text-gray-700">Mejoramiento en el UX en la vista de la aplicación web</li>
+    </section>
+    
+    <footer class="relative bg-blue-900 bg-center py-6 mt-10 text-white"
+        style="background-image: url('images/fondo.jpg'); background-size: cover; background-repeat: no-repeat;">
+        <!-- Capa azul tenue para el tinte -->
+        <div class="absolute inset-0 bg-blue-900/50 backdrop-blur-sm"></div>
+
+        <!-- Contenido del footer -->
+        <div class="relative text-center">
+            <p>&copy; 2025 Esteban Abraham Madrazo Parra. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>
